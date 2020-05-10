@@ -256,6 +256,9 @@ header {
   height: auto;
   background: white;
   padding: 58px 40px 53px 40px;
+  box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.02);
+  border: solid 1px #f0f0f0;
+  border-radius: 4px;
 }
 
 .aboutme__text h4 {
@@ -417,4 +420,46 @@ span {
   color: #ff3366 !important;
   transition: all 1s;
   outline: none;
+}
+
+/*HABILIDADES*/
+
+.content_text {
+  width: 100%;
+}
+
+.content_text h4 {
+  text-align: center;
+  color: #ff3366 !important;
+  font-weight: normal;
+  font-size: 2.3em;
+  letter-spacing: 0.5px;
+}
+
+.content_text h2 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #1a2e35 !important;
+  margin-bottom: 65px;
+}
+
+.container_skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content_skills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 0px 40px;
+}
+
+.content_tools {
+  width: 50%;
+  padding: 0px 50px;
 }
