@@ -17,11 +17,11 @@
       <div class="container__logo">
         <img class="logo_img" src="./img/logo.svg" alt="" />
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Acerca de mi</a></li>
-          <li><a href="">Mis Skills</a></li>
-          <li><a href="">Proyectos</a></li>
-          <li><a href="">Educacion</a></li>
+          <li><a href="#s1">Inicio</a></li>
+          <li><a href="#s2">Acerca de mi</a></li>
+          <li><a href="#s3">Mis Skills</a></li>
+          <li><a href="#s4">Proyectos</a></li>
+          <li><a href="#s5">Educacion</a></li>
         </ul>
       </div>
       <div class="container__diurno">
@@ -34,456 +34,562 @@
     </nav>
   </header>
   <!-- INICIO -->
-  <section class="section_start">
-    <div class="container__start">
-      <div class=" container__info ">
-        <h3 style="color: #ff3366;">HOLA,
-        </h3>
-        <h3>SOY JHOSEP GUADALUPE.</h3>
-        <h1>DEVELOPER FULL STACK</h1>
-        <p>Me
-          apasiona la programacion Back-End, Front-End, UX/UI y</p>
-        <p>todo
-          los relacionado con la tecnologia.</p>
-        <button class="button__skills">MIS SKILLS</button>
-        <button class="button__social">SOCIAL NETWORK</button>
+  <main>
+    <section class="section_start" id="s1">
+      <div class="container__start" class="section">
+        <div class=" container__info ">
+          <h3 style="color: #ff3366;">HOLA,
+          </h3>
+          <h3>SOY JHOSEP GUADALUPE.</h3>
+          <h1>DEVELOPER FULL-STACK</h1>
+          <p>Me
+            apasiona la programacion Back-End, Front-End, UX/UI y</p>
+          <p>todo
+            los relacionado con la tecnologia.</p>
+          <button class="button__skills"><a href="#s3">MIS SKILLS</a> </button>
+          <button class="button__social" id="btnSocial">SOCIAL NETWORK</button>
+        </div>
+        <div class="container__img">
+          <figure><img src="./img/img_inicio.svg" alt="logo_init" /></figure>
+        </div>
       </div>
-      <div class="container__img">
-        <figure><img src="./img/img_inicio.svg" alt="" /></figure>
-      </div>
-    </div>
-  </section>
-  <!-- ACERCA DE MI -->
-  <section class="section_aboutme">
-    <div class="container_aboutme">
-      <div class="aboutme__text">
-        <h4>TODO</h4>
-        <h2>ACERCA DE MI</h2>
-        <p> <strong>Hola Soy Jhosep Guadalupe,</strong> Desarrollador Full Stack en Python y Javascript, actualmente
-          estoy
-          estudiando en
-          la
-          Universidad Tecnologica del Perú y en CodiGo-TECSUP.
-          <br />Me apasiona la programación Back-End, Front-End, Diseño UI y todo lo relacionado con la tecnologia ,
-          muchas
-          gracias por visitar mi pagina. </p>
-      </div>
-      <div class="container__info__personal">
-        <div class="aboutme__info">
-          <h3>Datos personales:</h3>
-          <div class="container__icon">
-            <div class="icon__aboutme">
-              <img src="./img/icons/hourglass.svg" alt="">
-            </div><span>22 años</span>
+      <!-- MODAL -->
+      <!-- The Modal -->
+      <div id="modalSocial" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeModal">&times;</span>
+            <h2>SOCIAL NETWORKS</h2>
           </div>
-          <div class="container__icon">
-            <div class="icon__aboutme">
-              <img src="./img/icons/combined-shape.svg" alt="">
-            </div><span>993541937</span>
-          </div>
-          <div class="container__icon">
-            <div class="icon__aboutme">
-              <img src="./img/icons/multimedia.svg" alt="">
-            </div><span>jhoosepgc14@gmail.com</span>
-          </div>
-          <div class="container__icon">
-            <div class="icon__aboutme">
-              <img src="./img/icons/group-31.svg" alt="">
-            </div><span>Av. Universitaria #6599 Urb. Santa Luzmila I Etapa - Comas</span>
+          <div class="modal-body">
+            <div class="content_modal_icons">
+              <div class="container_social"><img src="./img//icons/facebook.svg" alt=""></div>
+              <div class="text_social"><span>Facebook</span></div>
+            </div>
+            <div class="content_modal_icons">
+              <div class="container_social"><img src="./img//icons/instagram.svg" alt=""></div>
+              <div class="text_social"><span>instagram</span></div>
+            </div>
+            <div class="content_modal_icons">
+              <div class="container_social"><img src="./img//icons/github.svg" alt=""></div>
+              <div class="text_social"><span>Github</span></div>
+            </div>
+            <div class="content_modal_icons">
+              <div class="container_social"><img src="./img//icons/twitter.svg" alt=""></div>
+              <div class="text_social"><span>Twitter</span></div>
+            </div>
+            <div class="content_modal_icons">
+              <div class="container_social"><img src="./img//icons/linkedin.svg" alt=""></div>
+              <div class="text_social"><span>Linkedin</span></div>
+            </div>
           </div>
         </div>
-        <div class="skills__interest">
-          <div class="container__interest">
-            <h3>Me interesa:</h3>
-            <div class="interest"><span>Seguir aprendiendo</span></div>
-            <div class="interest"><span>Tecnología</span></div>
-            <div class="interest"><span>Deporte</span></div>
-            <div class="interest"><span>Peliculas</span></div>
-            <div class="interest"><span>Autodidacta</span></div>
-            <div class="interest"><span>Metodologías ágiles</span></div>
-            <div class="interest"><span>Crecer a nivel de conocimientos</span></div>
+      </div>
+    </section>
+    <!-- ACERCA DE MI -->
+    <section class="section_aboutme" id="s2">
+      <div class="container_aboutme" class="section">
+        <div class="aboutme__text">
+          <h4>TODO</h4>
+          <h2>ACERCA DE MI</h2>
+          <p> <strong>Hola Soy Jhosep Guadalupe,</strong> Desarrollador Full Stack en Python y Javascript, actualmente
+            estoy
+            estudiando en
+            la
+            Universidad Tecnologica del Perú y en CodiGo-TECSUP.
+            <br />Me apasiona la programación Back-End, Front-End, Diseño UI y todo lo relacionado con la tecnologia ,
+            muchas
+            gracias por visitar mi pagina. </p>
+        </div>
+        <div class="container__info__personal">
+          <div class="aboutme__info">
+            <h3>Datos personales:</h3>
+            <div class="container__icon">
+              <div class="icon__aboutme">
+                <img src="./img/icons/hourglass.svg" alt="">
+              </div><span>22 años</span>
+            </div>
+            <div class="container__icon">
+              <div class="icon__aboutme">
+                <img src="./img/icons/combined-shape.svg" alt="">
+              </div><span>993541937</span>
+            </div>
+            <div class="container__icon">
+              <div class="icon__aboutme">
+                <img src="./img/icons/multimedia.svg" alt="">
+              </div><span>jhoosepgc14@gmail.com</span>
+            </div>
+            <div class="container__icon">
+              <div class="icon__aboutme">
+                <img src="./img/icons/group-31.svg" alt="">
+              </div><span>Av. Universitaria #6599 Urb. Santa Luzmila I Etapa - Comas</span>
+            </div>
           </div>
-          <div class="container__interest2">
-            <h3>Idiomas:</h3>
-            <div><span>Español:</span><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
-                src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg"
-                alt=""></div>
-            <div><span style="padding-right: 4px;">English:</span><img src="./img/icons/star.svg" alt=""><img
-                src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
-                src="./img/icons/star-noactive.svg" alt=""><img src="./img/icons/star-noactive.svg" alt=""></div>
+          <div class="skills__interest">
+            <div class="container__interest">
+              <h3>Me interesa:</h3>
+              <div class="interest"><span>Seguir aprendiendo</span></div>
+              <div class="interest"><span>Tecnología</span></div>
+              <div class="interest"><span>Deporte</span></div>
+              <div class="interest"><span>Peliculas</span></div>
+              <div class="interest"><span>Autodidacta</span></div>
+              <div class="interest"><span>Metodologías ágiles</span></div>
+              <div class="interest"><span>Crecer a nivel de conocimientos</span></div>
+            </div>
+            <div class="container__interest2">
+              <h3>Idiomas:</h3>
+              <div><span>Español:</span><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg"
+                  alt=""><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
+                  src="./img/icons/star.svg" alt=""></div>
+              <div><span style="padding-right: 4px;">English:</span><img src="./img/icons/star.svg" alt=""><img
+                  src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
+                  src="./img/icons/star-noactive.svg" alt=""><img src="./img/icons/star-noactive.svg" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+        <a href="./pdf/Jhosep-CV.pdf" download="Jhosep_Guadalupe_CV">DESCARGAR
+          CV</a>
+      </div>
+    </section>
+    <!-- HABILIDADES ESPECIALES -->
+    <section class="section_aboutme" id="s3">
+      <div class="container_skills" class="section">
+        <div class="content_text">
+          <h4>EXPERIENCIA EN</h4>
+          <h2>HABILIDADES ESPECIALES</h2>
+        </div>
+        <!-- BOX 1 -->
+        <div class="content_skills">
+          <h3>Habilidades:</h3>
+          <div class="contenerdor_skill">
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">SASS</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator">50%</span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">JAVASCRIPT</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">ANGULAR 9</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">PYTHON</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">FLASK</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">SQLITE 3</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">CSS3</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">BOOTSTRAP 4</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">REACT JS</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">NODE JS</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">DJANGO</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">DJANGO REST FRAMEWORK</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">MYSQL</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">POSTGRESQL</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">GIT</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOX 2 -->
+        <div class="content_tools">
+          <h3>Metodologías ágiles:</h3>
+          <div class="scrum">
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-      <a href="./pdf/Jhosep-CV.pdf" download="Jhosep_Guadalupe_CV">DESCARGAR
-        CV</a>
-    </div>
-  </section>
-  <!-- HABILIDADES ESPECIALES -->
-  <section class="section_aboutme">
-    <div class="container_skills">
-      <div class="content_text">
-        <h4>EXPERIENCIA EN</h4>
-        <h2>HABILIDADES ESPECIALES</h2>
-      </div>
-      <!-- BOX 1 -->
-      <div class="content_skills">
-        <h3>Habilidades:</h3>
-        <div class="contenerdor_skill">
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
+          <!-- BOX 3 -->
+
+          <h3>Herramientas Front-End:</h3>
+          <div class="tools">
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
             </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
             </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">SASS</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator">50%</span>
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
             </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">JAVASCRIPT</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">ANGULAR 9</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">PYTHON</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">FLASK</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">SQLITE 3</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">CSS3</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">BOOTSTRAP 4</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">REACT JS</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">NODE JS</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">DJANGO</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">DJANGO REST FRAMEWORK</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">MYSQL</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">POSTGRESQL</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">GIT</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
+            <div class="progress-bar">
+              <span class="skill">HTML5</span>
+              <div class="meter">
+                <span class="bar"></span>
+                <span class="pointer"></span>
+                <span id="indicator" class="indicator"></span>
+              </div>
+              <div class="legend">
+                <span id="min-value"></span>
+                <span id="max-value"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- BOX 2 -->
-      <div class="content_tools">
-        <h3>Metodologías ágiles:</h3>
-        <div class="scrum">
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
+    </section>
+    <!-- MIS PROYECTOS -->
+    <section class="section_projects" id="s4">
+      <h4>TODOS MIS</h4>
+      <h2>PROYECTOS</h2>
+      <div class="container_grid" class="section">
+        <div class="content_project">
+          <img src="./img/project1.jpg" alt="project1">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+          <!-- MODAL -->
+          <!-- The Modal -->
+          <div id="modalProject" class="modalProjecto">
+            <!-- Modal content -->
+            <div class="modal-content2">
+              <div class="modal-header2">
+                <span class="closeOff">&times;</span>
+                <div>
+                  <h3>PROYECTO</h3>
+                  <h3 style="color: #ff3366;">PLATAFORMA DE CURSOS VIRTUALES</h3>
+                </div>
+              </div>
+              <div class="modal-body2">
+                <div class="container_text_project">
+                  <div>
+                    <p>Esas grandes ideas sucedieron sobre papel y con Humberto,
+                      pondrás en evidencia su proceso de creación. Para tu proyecto
+                      crearás y presentarás una idea desde las bases, con ella
+                      podrás obtener un certificado del curso y la experiencia inicial
+                      en creatividad publicitaria. ¡Tu idea estará lista para ser
+                      contada!</p>
+                  </div>
+                  <div class="tech">
+                    <h5>Tecnologias:</h5>
+                    <div class="text_social"><span>Html5</span></div>
+                    <div class="text_social"><span>Css3</span></div>
+                    <div class="text_social"><span>Sass</span></div>
+                    <div class="text_social"><span>Javascript</span></div>
+                    <div class="text_social"><span>React JS</span></div>
+                  </div>
+                  <div class="retroespectiva">
+                    <h5>Retroespectiva</h5>
+                    <p>Esas grandes ideas sucedieron sobre papel y con Humberto,
+                      pondrás en evidencia su proceso de creación. Para tu proyecto
+                      crearás y presentarás una idea desde las bases, con ella</p>
+                  </div>
+                </div>
+                <div><img src="./img/project3.jpg" alt=""></div>
+              </div>
             </div>
           </div>
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
+        </div>
+        <div class="content_project">
+          <img src="./img/project2.jpg" alt="project2">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject2">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+        </div>
+        <div class="content_project">
+          <img src="./img/project3.jpg" alt="project3">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject3">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+        </div>
+        <div class="content_project">
+          <img src="./img/project4.jpg" alt="project4">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject4">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+        </div>
+        <div class="content_project">
+          <img src="./img/project5.jpg" alt="project5">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject5">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+        </div>
+        <div class="content_project">
+          <img src="./img/project6.jpg" alt="project6">
+          <div class="url_container">
+            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
+                id="btnProject6">www.jhosep.com.pe</a></div>
+            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="pagination">
+          <a href="">❮</a>
+          <a href="" class="active">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">❯</a>
+        </div>
+      </div>
+    </section>
+    <!-- MI EDUCACION -->
+    <section class="section_education" id="s5">
+      <h4>LINEA DE TIEMPO DE</h4>
+      <h2>MI EDUCACIÓN</h2>
+      <div class="container_box_education" class="section">
+        <div class="container_educaction">
+          <div class="oval"><img src="./img/img-educacion.svg" alt=""></div>
+          <div class="text_education">
+            <div class="card_education">
+              <h5>Universidad Privada del Norte</h5>
+              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
+                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
+                Nulla</p>
+              <span>Ciclo de tiempo:</span>
+              <p class="fecha">2015-2020</p>
             </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
+            <div class="card_education">
+              <h5>Universidad Privada del Norte</h5>
+              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
+                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
+                Nulla</p>
+              <span>Ciclo de tiempo:</span>
+              <p class="fecha">2015-2020</p>
+            </div>
+            <div class="card_education">
+              <h5>Universidad Privada del Norte</h5>
+              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
+                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
+                Nulla</p>
+              <span>Ciclo de tiempo:</span>
+              <p class="fecha">2015-2020</p>
+            </div>
+            <div class="show_more"><a href="">Mostrar más</a><img src="./img/icons/shape.svg" alt="">
             </div>
           </div>
         </div>
 
-        <!-- BOX 3 -->
-
-        <h3>Herramientas Front-End:</h3>
-        <div class="tools">
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="skill">HTML5</span>
-            <div class="meter">
-              <span class="bar"></span>
-              <span class="pointer"></span>
-              <span id="indicator" class="indicator"></span>
-            </div>
-            <div class="legend">
-              <span id="min-value"></span>
-              <span id="max-value"></span>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <!-- MIS PROYECTOS -->
-  <section class="section_projects">
-    <h4>TODOS MIS</h4>
-    <h2>PROYECTOS</h2>
-    <div class="container_grid">
-      <div>
-        <img src="./img/project1.jpg" alt="">
-      </div>
-      <div>
-        <img src="./img/project2.jpg" alt="">
-      </div>
-      <div>
-        <img src="./img/project3.jpg" alt="">
-      </div>
-      <div>
-        <img src="./img/project4.jpg" alt="">
-      </div>
-      <div>
-        <img src="./img/project5.jpg" alt="">
-      </div>
-      <div>
-        <img src="./img/project6.jpg" alt="">
-      </div>
-    </div>
-    <div class="center">
-      <div class="pagination">
-        <a href="">❮</a>
-        <a href="" class="active">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">❯</a>
-      </div>
-    </div>
-  </section>
-  <!-- MI EDUCACION -->
-  <section class="section_education">
-    <h4>LINEA DE TIEMPO DE</h4>
-    <h2>MI EDUCACIÓN</h2>
-    <div class="container_box_education">
-      <div class="container_educaction">
-        <div class="oval"><img src="./img/img-educacion.svg" alt=""></div>
-        <div class="text_education">
-          <div class="card_education">
-            <h5>Universidad Privada del Norte</h5>
-            <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-              vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-              Nulla</p>
-            <span>Ciclo de tiempo:</span>
-            <p class="fecha">2015-2020</p>
-          </div>
-          <div class="card_education">
-            <h5>Universidad Privada del Norte</h5>
-            <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-              vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-              Nulla</p>
-            <span>Ciclo de tiempo:</span>
-            <p class="fecha">2015-2020</p>
-          </div>
-          <div class="card_education">
-            <h5>Universidad Privada del Norte</h5>
-            <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-              vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-              Nulla</p>
-            <span>Ciclo de tiempo:</span>
-            <p class="fecha">2015-2020</p>
-          </div>
-          <div class="show_more"><a href="">Mostrar más</a><img src="./img/icons/shape.svg" alt="">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+    </section>
+  </main>
   <!-- FOOTER -->
   <footer>
     <div class="container_footer">
@@ -498,7 +604,36 @@
     </div>
   </footer>
   <!-- JAVASCRIPT -->
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script>
+    //SMOOTH SCROLLING
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
 </body>
 
 </html>

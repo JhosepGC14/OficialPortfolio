@@ -71,18 +71,27 @@ header {
   height: 68px;
 }
 
-.container__logo ul li:hover {
+.container__logo ul li a:hover {
+  border-bottom: 2px solid #ff3366;
+  border-bottom-left-radius: 1px 1px;
+  border-bottom-right-radius: 1px 1px;
+} 
+
+nav ul li a.current {
   border-bottom: 2px solid #ff3366;
   border-bottom-left-radius: 1px 1px;
   border-bottom-right-radius: 1px 1px;
 }
 
 .container__logo ul li a {
+  display: block;
   font-weight: 500;
   list-style: none;
   text-decoration: none !important;
   color: #333333;
   font-size: 1.4em;
+  line-height: 70px;
+  height: 68px;
 }
 
 .container__diurno {
@@ -191,6 +200,13 @@ header {
   margin: 36px 24px 0px 0px;
   cursor: pointer;
   transition: all 1s;
+}
+
+.button__skills a {
+  width: 100%;
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 .button__skills:focus {
@@ -606,26 +622,8 @@ span {
   position: absolute;
   bottom: 9px;
   left: var(--pointer-left);
-  animation: load-pointer 2s ease-in-out 0s 1 normal;
+  animation: 2s ease-in-out 0s 1 normal;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
-}
-
-@keyframes load-indicator {
-  from {
-    left: calc(0% - var(--indicator-offset));
-  }
-}
-
-@keyframes load-pointer {
-  from {
-    left: calc(0% - var(--pointer-offset));
-  }
-}
-
-@keyframes fill {
-  from {
-    clip-path: circle(0% at left);
-  }
 }
 
 /*PROYECTOS*/
@@ -674,6 +672,74 @@ span {
   height: 100%;
 }
 
+.content_project {
+  position: relative;
+  cursor: pointer;
+}
+
+.url_container {
+  transition: 1s all;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 114px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.9)
+  );
+  padding: 48px 17px 26px 17px;
+}
+
+.content_project:hover > .url_container {
+  opacity: 1;
+  transition: 1s all;
+}
+
+.direction {
+  width: 240px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f8f8f9;
+  padding: 12px 69px 12px 22px;
+  display: flex;
+  align-items: center;
+}
+
+.direction img {
+  width: 9px;
+  margin-right: 9px;
+}
+
+.direction a {
+  font-family: "Barlow";
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.direction a:hover {
+  text-decoration: underline;
+}
+
+.rectangule {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f8f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*pagination*/
 .center {
   text-align: center;
@@ -712,7 +778,7 @@ span {
 .section_education {
   width: 100%;
   height: auto;
-  margin-top: 70px;
+  padding-top: 70px;
   margin-bottom: 70px;
   box-sizing: border-box;
 }
@@ -873,11 +939,320 @@ footer {
 .whatsapp {
   width: 52px;
   position: fixed;
-  z-index: 10000;
+  z-index: 2;
   right: 30px;
   bottom: 130px;
 }
 
 .whatsapp img {
   width: 52px;
+  opacity: 0;
+  animation: zoonIn 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+}
+
+/*MODAL SOCIAL CSS*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 14%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px 25px 0px 33px;
+  border: 1px solid #888;
+  max-width: 418px;
+  min-height: 288px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.closeModal {
+  color: #ff3366;
+  float: right;
+  font-size: 33px;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #ff3366;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 23px;
+  margin-bottom: 46px;
+}
+
+.modal-header h2 {
+  font-family: "Barlow";
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.modal-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content_modal_icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.text_social {
+  width: 108px;
+  height: 34px;
+  border-radius: 17px;
+  box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.02);
+  border: solid 1px #f0f0f0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_social span {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #555555;
+}
+
+/* Add Animations Keyframes */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes load-indicator {
+  from {
+    left: calc(0% - var(--indicator-offset));
+  }
+}
+
+@keyframes load-pointer {
+  from {
+    left: calc(0% - var(--pointer-offset));
+  }
+}
+
+@keyframes fill {
+  from {
+    clip-path: circle(0% at left);
+  }
+}
+
+/*MODAL PROJECT CSS*/
+/* The Modal (background) */
+.modalProjecto {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px 25px 0px 33px;
+  border: 1px solid #888;
+  width: 768px;
+  height: 585px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.closeOff {
+  color: #ff3366;
+  float: right;
+  font-size: 33px;
+}
+
+.closeOff:hover,
+.closeOff:focus {
+  color: #ff3366;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header2 {
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: start;
+  line-height: 23px;
+  margin-bottom: 28px;
+}
+
+.modal-header2 h3 {
+  font-family: "Barlow";
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.29px;
+  color: #1a2e35;
+}
+
+.modal-body2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 30px;
+  grid-template-rows: 100%;
+}
+
+.container_text_project {
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+}
+
+.container_text_project p {
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #555555;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tech h5 {
+  display: block;
+  font-family: "Barlow";
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  color: #1a2e35;
+  width: 100%;
+}
+
+.retroespectiva h5 {
+  font-family: "Barlow";
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  color: #1a2e35;
+  margin-bottom: 13px;
+}
+
+.content_modal_icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.text_social {
+  border-radius: 17px;
+  box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.02);
+  border: solid 1px #f0f0f0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.text_social span {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #555555;
 }
