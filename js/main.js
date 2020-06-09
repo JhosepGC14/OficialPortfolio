@@ -1,7 +1,7 @@
 //FECHA EN FOOTER
 const fecha = new Date().getFullYear();
 document.getElementById('fecha').innerHTML = fecha;
-console.log('fecha', fecha)
+
 
 
 // Get the modal

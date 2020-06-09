@@ -24,6 +24,7 @@ header {
   padding: 0px 150px;
   position: fixed;
   z-index: 1;
+  height: 70px;
 }
 
 .container__nav {
@@ -143,6 +144,10 @@ nav ul li a.current {
   height: 100%;
 }
 
+.container__info {
+  width: 50%;
+}
+
 .container__info h3 {
   font-size: 2.4em;
   display: inline-block;
@@ -166,6 +171,17 @@ nav ul li a.current {
   letter-spacing: normal;
   font-size: 1.8em;
   margin-top: 7px;
+}
+
+.container__img {
+  width: 50%;
+}
+.container_img_rwd {
+  display: none;
+}
+
+.container__img img {
+  width: 100%;
 }
 
 .button__skills {
@@ -242,6 +258,13 @@ nav ul li a.current {
   animation-fill-mode: forwards;
   transform: scale(1);
 }
+.container_img_rwd {
+  opacity: 0;
+  animation: zoonIn 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+}
 
 header {
   opacity: 0;
@@ -297,7 +320,7 @@ header {
 }
 
 .aboutme__text h2 {
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -321,7 +344,7 @@ header {
 }
 
 .aboutme__info h3 {
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -404,7 +427,7 @@ span {
 }
 
 .container__interest2 h3 {
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -431,7 +454,7 @@ span {
   background-color: #ff3366;
   margin: 36px auto 0px auto;
   color: white;
-  font-size: 15px;
+  font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 0.28px;
   text-align: center;
@@ -468,7 +491,7 @@ span {
 }
 
 .content_text h2 {
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -493,7 +516,7 @@ span {
 
 .section_aboutme h3 {
   font-family: "Barlow";
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -517,7 +540,7 @@ span {
   text-transform: uppercase;
   margin: 6px 0;
   font-family: "Source Sans Pro";
-  font-size: 13px;
+  font-size: 1.3em;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -549,7 +572,7 @@ span {
   color: #444444;
   background-color: #ffffff;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
-  font-size: 11px;
+  font-size: 1.1em;
   border-radius: 4px;
   top: -30px;
   right: 0;
@@ -610,13 +633,13 @@ span {
   text-align: center;
   color: #ff3366 !important;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 2.3em;
   letter-spacing: 0.5px;
   margin-top: 58px;
 }
 
 .section_projects h2 {
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -627,8 +650,8 @@ span {
 .container_grid {
   display: grid;
   width: 100%;
-  grid-template-columns: 330px 330px 330px;
-  grid-template-rows: 330px 330px;
+  grid-template-columns: repeat(3, 330px);
+  grid-template-rows: repeat(2, 330px);
   grid-column-gap: 37px;
   grid-row-gap: 37px;
   justify-content: center;
@@ -686,7 +709,7 @@ span {
 
 .direction a {
   font-family: "Barlow";
-  font-size: 13px;
+  font-size: 1.3em;
   font-weight: 600;
   color: #4a4a4a;
   text-decoration: none;
@@ -751,7 +774,7 @@ span {
 }
 
 .container_box_education {
-  width: 81%;
+  width: 85.6%;
   height: auto;
   margin: 0px auto 0px 71px;
   position: relative;
@@ -761,12 +784,12 @@ span {
   text-align: center;
   color: #ff3366 !important;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 2.3em;
   letter-spacing: 0.5px;
 }
 
 .section_education h2 {
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -778,7 +801,7 @@ span {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  position: relative;
 }
 
 .container_educaction .oval {
@@ -790,19 +813,55 @@ span {
 }
 
 .oval {
-  background-image: url("../img/oval.svg");
-  border-image-source: linear-gradient(to right, #f7f7f7 66%, #dde4ec 120%);
-  border-image-slice: 1;
+  border: double 3px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#f8f8f9, #f8f8f9),
+    radial-gradient(circle at left center, #f7f7f7 66%, #dde4ec 120%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .oval img {
-  width: 540px;
-  height: 492px;
+  width: 82%;
   margin: auto auto auto 0px;
+}
+
+.circle1 {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  background-image: linear-gradient(136deg, #0fc890, #4fe5b4 98%);
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-194%) translateY(350%);
+  z-index: -1;
+}
+
+.circle2 {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  background-image: linear-gradient(to bottom, #fad961, #f76b1c);
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-194%) translateY(350%);
+  z-index: -1;
+}
+
+.circle3 {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  background-image: linear-gradient(to bottom, #58fff8 3%, #00bcd2);
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-194%) translateY(350%);
+  z-index: -1;
 }
 
 .text_education {
   width: 40%;
+  margin-left: 85px;
 }
 
 .card_education {
@@ -812,10 +871,21 @@ span {
   border: solid 1px #f0f0f0;
   background-color: #ffffff;
   margin-bottom: 28px;
+  position: relative;
+}
+
+.card_education::before {
+  content: "";
+  width: 300px;
+  height: 3px;
+  background: #edf0f3;
+  position: absolute;
+  transform: translateY(2368%) translateX(-97%);
+  z-index: -1;
 }
 
 .card_education h5 {
-  font-size: 20px;
+  font-size: 2em;
   font-weight: normal;
   letter-spacing: 0.42px;
   color: #ff3366;
@@ -824,14 +894,14 @@ span {
 
 .card_education p {
   font-family: "Source Sans Pro";
-  font-size: 15px;
+  font-size: 1.5em;
   color: #555555;
   margin-bottom: 11px;
 }
 
 .card_education span {
   font-family: "Source Sans Pro";
-  font-size: 15px;
+  font-size: 1.5em;
   font-weight: 600;
   color: #444444;
   margin: 0px 16px 29px 0px;
@@ -839,8 +909,8 @@ span {
 
 .fecha {
   display: inline-block;
-  font-family: SourceSansPro;
-  font-size: 15px;
+  font-family: "Source Sans Pro";
+  font-size: 1.5em;
   color: #444444;
 }
 
@@ -849,8 +919,8 @@ span {
 }
 
 .show_more a {
-  font-family: Barlow;
-  font-size: 14px;
+  font-family: "Barlow";
+  font-size: 1.4em;
   font-weight: bold;
   letter-spacing: 0.29px;
   color: #ff3366;
@@ -880,7 +950,7 @@ footer {
 .container_footer p,
 .container_footer span {
   font-family: "Source Sans Pro";
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 300;
   color: #ffffff;
 }
@@ -956,7 +1026,7 @@ footer {
 .closeModal {
   color: #ff3366;
   float: right;
-  font-size: 33px;
+  font-size: 3.3em;
 }
 
 .closeModal:hover,
@@ -978,7 +1048,7 @@ footer {
 
 .modal-header h2 {
   font-family: "Barlow";
-  font-size: 23px;
+  font-size: 2.3em;
   font-weight: 500;
 }
 
@@ -1010,7 +1080,7 @@ footer {
 
 .text_social span {
   font-family: "Source Sans Pro";
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1109,7 +1179,7 @@ footer {
 .closeOff {
   color: #ff3366;
   float: right;
-  font-size: 33px;
+  font-size: 3.3em;
 }
 
 .closeOff:hover,
@@ -1131,7 +1201,7 @@ footer {
 
 .modal-header2 h3 {
   font-family: "Barlow";
-  font-size: 23px;
+  font-size: 2.3em;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1155,7 +1225,7 @@ footer {
 
 .container_text_project p {
   font-family: "Source Sans Pro";
-  font-size: 15px;
+  font-size: 1.5em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1173,7 +1243,7 @@ footer {
 .tech h5 {
   display: block;
   font-family: "Barlow";
-  font-size: 17px;
+  font-size: 1.7em;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1185,7 +1255,7 @@ footer {
 
 .retroespectiva h5 {
   font-family: "Barlow";
-  font-size: 17px;
+  font-size: 1.7em;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1215,11 +1285,364 @@ footer {
 
 .text_social span {
   font-family: "Source Sans Pro";
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #555555;
+}
+
+/* RESPONSIVE WEB DESIGN */
+
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 0px 120px;
+  }
+  .container__logo ul li {
+    margin: 0px 40px 0px 0px;
+  }
+  .container_logo img {
+    margin: 0px 40px 0px 0px;
+  }
+  .container__info p {
+    display: inline;
+  }
+  .dark_version {
+    width: 75px;
+  }
+  .aboutme__info {
+    width: 49%;
+  }
+  .container_grid {
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 250px);
+  }
+  .content_project {
+    width: 100%;
+  }
+  .content_project img {
+    display: block;
+    width: 100%;
+  }
+  .direction {
+    width: 75%;
+  }
+  .direction img {
+    width: 9px;
+  }
+  .rectangule img {
+    width: 60%;
+  }
+  .modalProjecto {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container__diurno {
+    width: 16%;
+  }
+  .container__logo .logo_img {
+    display: block;
+    margin: 0px 35px 0px 0px;
+  }
+  .container__logo ul li {
+    margin: 0px 26px 0px 0px;
+  }
+  .button__skills {
+    display: block;
+  }
+  .button__social {
+    margin-top: 24px;
+  }
+  .skill {
+    width: 47%;
+  }
+  .container_grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
+  }
+  .container_educaction {
+    align-items: center;
+  }
+  .container_educaction .oval {
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .oval img {
+    width: 91%;
+    margin: auto auto auto 0px;
+  }
+  .text_education {
+    width: 45%;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0px 120px 0px 74px;
+  }
+  header ul {
+    display: none;
+  }
+  .container__diurno span {
+    display: none;
+  }
+  .container__diurno {
+    width: 10%;
+  }
+
+  .container__info__personal {
+    flex-direction: column;
+  }
+  .aboutme__info {
+    width: 100%;
+    padding-bottom: 43px;
+  }
+  .skills__interest {
+    width: 100%;
+    padding-top: 43px;
+    padding-left: 0px;
+    border-top: 1px solid #f0f0f0;
+    border-left: none;
+  }
+  .skill {
+    width: 100%;
+  }
+  .container_grid {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(6, 300px);
+  }
+  .container_educaction .oval {
+    display: none;
+  }
+  .text_education {
+    width: 100%;
+  }
+  .text_education {
+    width: 100%;
+    margin: 0;
+  }
+  .container_box_education {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .card_education::before {
+    display: none;
+  }
+  .circle1,
+  .circle2,
+  .circle3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 0px 120px 0px 45px;
+  }
+  .container__diurno {
+    width: 20%;
+  }
+  .container__nav {
+    height: 60px;
+  }
+  .section_start {
+    height: 100%;
+    padding-top: 90px;
+  }
+  .container__info {
+    width: 100%;
+    text-align: center;
+  }
+  .container__info h3 {
+    font-size: 2.4em;
+  }
+  .container__info h1 {
+    font-size: 3.2em;
+  }
+  .container__img {
+    display: none;
+  }
+  .container_img_rwd {
+    display: block;
+    width: 100%;
+  }
+  .container_img_rwd img {
+    width: 100%;
+  }
+  .button__skills {
+    margin: 30px auto auto auto;
+  }
+  .container_skills {
+    flex-direction: column;
+  }
+  .content_skills {
+    width: 100%;
+  }
+  .content_tools {
+    width: 100%;
+  }
+  footer {
+    height: 168px;
+  }
+  .container_footer {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .images_footer {
+    margin-bottom: 29px;
+  }
+  .whatsapp {
+    bottom: 180px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .section_start {
+    width: 90%;
+    padding-top: 115px;
+  }
+  .container__diurno {
+    width: 30%;
+  }
+  .container__info h3 {
+    font-size: 2.1em;
+  }
+  .container__info h1 {
+    font-size: 2.7em;
+    margin-bottom: 8px;
+  }
+  .container__info p {
+    font-size: 1.5em;
+  }
+  .container_img_rwd {
+    margin-top: 19px;
+  }
+  .section_aboutme {
+    width: 95%;
+  }
+  .aboutme__text h4 {
+    font-size: 2em;
+  }
+  .aboutme__text h2 {
+    font-size: 2.7em;
+  }
+  .container_aboutme {
+    padding: 20px 20px 42px 20px;
+  }
+  .content_text h4 {
+    font-size: 2em;
+  }
+  .content_text h2 {
+    font-size: 2.7em;
+  }
+  .content_skills {
+    padding: 0px 20px 0px 20px;
+  }
+  .content_tools {
+    padding: 0px 20px 0px 20px;
+  }
+  .content_tools h3:first-child {
+    margin-top: 30px;
+  }
+  .scrum {
+    margin-bottom: 50px;
+  }
+  .section_projects {
+    width: 95%;
+  }
+  .section_projects h4 {
+    font-size: 2em;
+  }
+  .section_projects h2 {
+    font-size: 2.7em;
+    margin-bottom: 46px;
+  }
+  .container_box_education {
+    width: 95%;
+  }
+  .section_education h4 {
+    font-size: 2em;
+  }
+  .section_education h2 {
+    font-size: 2.7em;
+  }
+  .modal {
+    padding: 0px;
+    height: 100%;
+  }
+  .modal-content {
+    height: 100%;
+  }
+  .modal-body {
+    flex-direction: column;
+  }
+  .content_modal_icons {
+    width: 100%;
+  }
+  .modalProjecto {
+    height: 100%;
+    padding: 0px;
+  }
+  .modal-content2 {
+    width: 100%;
+    height: 100%;
+    padding: 26px 26px;
+    overflow-x: scroll;
+  }
+  .modal-header2 {
+    margin-bottom: 20px;
+  }
+  .modal-header2 h3 {
+    font-size: 2em;
+  }
+  .modal-body2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .container_text_project {
+    grid-row-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container__diurno {
+    width: 40%;
+  }
+  .section_start {
+    width: 95%;
+  }
+  .container_grid {
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(6, 280px);
+  }
+  .whatsapp img {
+    width: 40px;
+  }
+  .whatsapp {
+    bottom: 175px;
+    right: 0px;
+  }
+  .modal {
+    padding: 0px;
+    height: 100%;
+  }
+  .modal-content {
+    height: 100%;
+  }
+  .modal-body {
+    flex-direction: column;
+  }
+  .content_modal_icons {
+    width: 100%;
+  }
 }
