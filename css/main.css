@@ -1615,6 +1615,13 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
+  .container__info h3 {
+    font-size: 1.9em;
+  }
+  .container__info h1 {
+    font-size: 2.5em;
+    margin-bottom: 8px;
+  }
   .container__diurno {
     width: 40%;
   }
