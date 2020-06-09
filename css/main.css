@@ -1296,7 +1296,7 @@ footer {
 
 /* RESPONSIVE WEB DESIGN */
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   header {
     padding: 0px 120px;
   }
@@ -1340,7 +1340,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container__diurno {
     width: 16%;
   }
@@ -1384,7 +1384,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 0px 120px 0px 74px;
   }
@@ -1444,12 +1444,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   header {
     padding: 0px 120px 0px 45px;
   }
   .container__diurno {
-    width: 20%;
+    width: 60px;
   }
   .container__nav {
     height: 60px;
@@ -1457,16 +1457,21 @@ footer {
   .section_start {
     height: 100%;
     padding-top: 90px;
+    width: 95%;
   }
   .container__info {
     width: 100%;
     text-align: center;
   }
   .container__info h3 {
-    font-size: 2.4em;
+    font-size: 2.1em;
   }
   .container__info h1 {
-    font-size: 3.2em;
+    font-size: 2.7em;
+    margin-bottom: 8px;
+  }
+  .container__info p {
+    font-size: 1.5em;
   }
   .container__img {
     display: none;
@@ -1485,10 +1490,61 @@ footer {
     flex-direction: column;
   }
   .content_skills {
+    padding: 0px 20px 0px 20px;
     width: 100%;
   }
   .content_tools {
+    padding: 0px 20px 0px 20px;
     width: 100%;
+  }
+  .section_aboutme {
+    width: 95%;
+  }
+  .aboutme__text h4 {
+    font-size: 2em;
+  }
+  .aboutme__text h2 {
+    font-size: 2.7em;
+  }
+  .container_aboutme {
+    padding: 20px 20px 42px 20px;
+  }
+  .content_text h4 {
+    font-size: 2em;
+  }
+  .content_text h2 {
+    font-size: 2.7em;
+  }
+  .content_skills {
+    padding: 0px 20px 0px 20px;
+  }
+  .content_tools {
+    padding: 0px 20px 0px 20px;
+  }
+  .content_tools h3:first-child {
+    margin-top: 30px;
+  }
+  .scrum {
+    margin-bottom: 50px;
+  }
+  .section_projects {
+    width: 95%;
+  }
+  .section_projects h4 {
+    font-size: 2em;
+  }
+  .section_projects h2 {
+    font-size: 2.7em;
+    margin-bottom: 46px;
+  }
+  .container_box_education {
+    width: 95%;
+  }
+  .section_education h4 {
+    font-size: 2em;
+  }
+  .section_education h2 {
+    font-size: 2.7em;
   }
   footer {
     height: 168px;
@@ -1503,6 +1559,43 @@ footer {
   .whatsapp {
     bottom: 180px;
     right: 20px;
+  }
+  .modal {
+    padding: 0px;
+    height: 100%;
+  }
+  .modal-content {
+    height: 100%;
+    max-width: 100%;
+  }
+  .modal-body {
+    flex-direction: column;
+  }
+  .content_modal_icons {
+    width: 100%;
+  }
+  .modalProjecto {
+    height: 100%;
+    padding: 0px;
+  }
+  .modal-content2 {
+    width: 100%;
+    height: 100%;
+    padding: 26px 26px;
+    overflow-x: scroll;
+  }
+  .modal-header2 {
+    margin-bottom: 20px;
+  }
+  .modal-header2 h3 {
+    font-size: 2em;
+  }
+  .modal-body2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .container_text_project {
+    grid-row-gap: 30px;
   }
 }
 
