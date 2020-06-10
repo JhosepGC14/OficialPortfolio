@@ -298,7 +298,7 @@ header {
   width: 80%;
   margin: auto;
   height: 100%;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .container_aboutme {
@@ -618,7 +618,16 @@ span {
 
 /*PROYECTOS*/
 
-.section_projects {
+.section_project {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.project_text {
+  padding: 58px 0px 54px 0px;
+}
+
+.container_projects {
   width: 80%;
   margin: auto;
   height: auto;
@@ -629,22 +638,20 @@ span {
   background-color: #ffffff;
 }
 
-.section_projects h4 {
+.container_projects h4 {
   text-align: center;
   color: #ff3366 !important;
   font-weight: normal;
   font-size: 2.3em;
   letter-spacing: 0.5px;
-  margin-top: 58px;
 }
 
-.section_projects h2 {
+.container_projects h2 {
   font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
   color: #1a2e35 !important;
-  margin-bottom: 54px;
 }
 
 .container_grid {
@@ -765,6 +772,10 @@ span {
 }
 
 /* EDUCACION */
+.container_section {
+  width: 100%;
+  padding-top: 40px;
+}
 .section_education {
   width: 100%;
   height: auto;
@@ -977,12 +988,11 @@ footer {
   width: 52px;
   position: fixed;
   z-index: 2;
-  right: 30px;
-  bottom: 130px;
+  right: 50px;
+  bottom: 10px;
 }
 
 .whatsapp img {
-  width: 52px;
   opacity: 0;
   animation: zoonIn 1s;
   animation-delay: 0.5s;
@@ -1512,6 +1522,9 @@ footer {
   .modal-content2 {
     width: 100%;
   }
+  .url_container {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1597,13 +1610,13 @@ footer {
   .scrum {
     margin-bottom: 50px;
   }
-  .section_projects {
+  .container_projects {
     width: 95%;
   }
-  .section_projects h4 {
+  .container_projects h4 {
     font-size: 2em;
   }
-  .section_projects h2 {
+  .container_projects h2 {
     font-size: 2.7em;
     margin-bottom: 46px;
   }
@@ -1626,10 +1639,7 @@ footer {
   .images_footer {
     margin-bottom: 29px;
   }
-  .whatsapp {
-    bottom: 180px;
-    right: 20px;
-  }
+
   .modal {
     padding: 0px;
     height: 100%;
@@ -1666,6 +1676,9 @@ footer {
   }
   .container_text_project {
     grid-row-gap: 30px;
+  }
+  .url_container {
+    opacity: 1;
   }
 }
 
@@ -1723,60 +1736,76 @@ footer {
   .scrum {
     margin-bottom: 50px;
   }
-  .section_projects {
+  .container_projects {
     width: 95%;
   }
-  .section_projects h4 {
+  .container_projects h4 {
     font-size: 2em;
   }
-  .section_projects h2 {
+  .container_projects h2 {
     font-size: 2.7em;
     margin-bottom: 46px;
   }
+
   .container_box_education {
     width: 95%;
   }
+
   .section_education h4 {
     font-size: 2em;
   }
+
   .section_education h2 {
     font-size: 2.7em;
   }
+
   .modal {
     padding: 0px;
     height: 100%;
   }
+
   .modal-content {
     height: 100%;
   }
   .modal-body {
     flex-direction: column;
   }
+
   .content_modal_icons {
     width: 100%;
   }
+
   .modalProjecto {
     height: 100%;
     padding: 0px;
   }
+
   .modal-content2 {
     width: 100%;
     height: 100%;
     padding: 26px 26px;
     overflow-x: scroll;
   }
+
   .modal-header2 {
     margin-bottom: 20px;
   }
+
   .modal-header2 h3 {
     font-size: 2em;
   }
+
   .modal-body2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
   .container_text_project {
     grid-row-gap: 30px;
+  }
+
+  .url_container {
+    opacity: 1;
   }
 }
 
@@ -1798,13 +1827,7 @@ footer {
     grid-template-columns: repeat(1, 280px);
     grid-template-rows: repeat(6, 280px);
   }
-  .whatsapp img {
-    width: 40px;
-  }
-  .whatsapp {
-    bottom: 175px;
-    right: 0px;
-  }
+
   .modal {
     padding: 0px;
     height: 100%;
@@ -1820,5 +1843,8 @@ footer {
   }
   .dark_version {
     width: 62px;
+  }
+  .url_container {
+    opacity: 1;
   }
 }
