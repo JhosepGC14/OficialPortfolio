@@ -4,55 +4,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/pushbar.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="icon" href="./img/icons/javascript.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <link rel="icon" href="./img/icons/javascript.svg" />
   <title>.:: Jhosep Guadalupe ::.</title>
 </head>
 
 <body>
-  <div class="whatsapp"><a
+  <div class="whatsapp">
+    <a
       href="https://api.whatsapp.com/send?phone=51993541937&text=Hola%20Jhosep,%20quisiera%20conversar%20contigo%20sobre%20una%20propuesta%20laboral%20o%20sobre%20un%20proyecto.%20%C2%BFTe%20interesa?"><img
-        src="./img/whatsapp.svg" alt="icon_whastapp"></a></div>
-  <header>
+        src="./img/whatsapp.svg" alt="icon_whastapp" /></a>
+  </div>
+  <header class="pushbar_main_content pushbar_blur">
     <nav class="container__nav">
       <div class="container__logo">
         <img class="logo_img" src="./img/logo.svg" alt="" />
         <ul>
-          <li><a href="#s1">Inicio</a></li>
-          <li><a href="#s2">Acerca de mi</a></li>
-          <li><a href="#s3">Mis Skills</a></li>
-          <li><a href="#s4">Proyectos</a></li>
-          <li><a href="#s5">Educacion</a></li>
+          <li><a href="#init">Inicio</a></li>
+          <li><a href="#aboutme">Acerca de mi</a></li>
+          <li><a href="#skills">Mis Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#education">Educacion</a></li>
         </ul>
       </div>
       <div class="container__diurno">
         <span>Modo diurno</span>
         <div class="dark_version">
-          <div class="light_version"><img src="./img/icons/illumination.svg" alt="" /></div>
+          <div class="light_version">
+            <img src="./img/icons/illumination.svg" alt="" />
+          </div>
           <img src="./img/icons/phases.svg" alt="" />
         </div>
       </div>
+      <button class="btn-menu" data-pushbar-target="pushbar-menu">
+        <img src="./img/icons/bars.svg" alt="">
+      </button>
     </nav>
   </header>
+  <div data-pushbar-id="pushbar-menu" data-pushbar-direction="right" class="pushbar-menu">
+    <div class="btn_close">
+      <img src="./img/logo.svg" alt="logo-jgc" />
+      <span data-pushbar-close>&times;</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#init" data-pushbar-close>Inicio</a></li>
+        <li><a href="#aboutmer" data-pushbar-close>Acerca de mi</a></li>
+        <li><a href="#skillsr" data-pushbar-close>Mis Skills</a></li>
+        <li><a href="#projectsr" data-pushbar-close>Proyectos</a></li>
+        <li><a href="#educationr" data-pushbar-close>Educacion</a></li>
+      </ul>
+    </nav>
+  </div>
   <!-- INICIO -->
-  <main>
-    <section class="section_start" id="s1">
+  <main class="pushbar_main_content pushbar_blur">
+    <section class="section_start" id="init">
       <div class="container__start">
-        <div class=" container__info ">
-          <h3 style="color: #ff3366;">HOLA,
-          </h3>
+        <div class="container__info">
+          <h3 style="color: #ff3366;">HOLA,</h3>
           <h3>SOY JHOSEP GUADALUPE.</h3>
           <h1>DEVELOPER FULL-STACK</h1>
-          <p>Me
-            apasiona la programacion Back-End, Front-End, UX/UI y</p>
-          <p>todo
-            los relacionado con la tecnologia.</p>
+          <p>Me apasiona la programacion Back-End, Front-End, UX/UI y</p>
+          <p>todo los relacionado con la tecnologia.</p>
           <div class="container_img_rwd">
-            <figure><img src="./img/img_inicio.svg" alt="logo_init" /></figure>
+            <figure>
+              <img src="./img/img_inicio.svg" alt="logo_init" />
+            </figure>
           </div>
-          <button class="button__skills"><a href="#s3">MIS SKILLS</a> </button>
-          <button class="button__social" id="btnSocial">SOCIAL NETWORK</button>
+          <button class="button__skills"><a href="#skills">MIS SKILLS</a></button>
+          <button class="button__social" id="btnSocial">
+            SOCIAL NETWORK
+          </button>
         </div>
         <div class="container__img">
           <figure><img src="./img/img_inicio.svg" alt="logo_init" /></figure>
@@ -69,23 +95,33 @@
           </div>
           <div class="modal-body">
             <div class="content_modal_icons">
-              <div class="container_social"><img src="./img//icons/facebook.svg" alt=""></div>
+              <div class="container_social">
+                <img src="./img//icons/facebook.svg" alt="" />
+              </div>
               <div class="text_social"><span>Facebook</span></div>
             </div>
             <div class="content_modal_icons">
-              <div class="container_social"><img src="./img//icons/instagram.svg" alt=""></div>
+              <div class="container_social">
+                <img src="./img//icons/instagram.svg" alt="" />
+              </div>
               <div class="text_social"><span>instagram</span></div>
             </div>
             <div class="content_modal_icons">
-              <div class="container_social"><img src="./img//icons/github.svg" alt=""></div>
+              <div class="container_social">
+                <img src="./img//icons/github.svg" alt="" />
+              </div>
               <div class="text_social"><span>Github</span></div>
             </div>
             <div class="content_modal_icons">
-              <div class="container_social"><img src="./img//icons/twitter.svg" alt=""></div>
+              <div class="container_social">
+                <img src="./img//icons/twitter.svg" alt="" />
+              </div>
               <div class="text_social"><span>Twitter</span></div>
             </div>
             <div class="content_modal_icons">
-              <div class="container_social"><img src="./img//icons/linkedin.svg" alt=""></div>
+              <div class="container_social">
+                <img src="./img//icons/linkedin.svg" alt="" />
+              </div>
               <div class="text_social"><span>Linkedin</span></div>
             </div>
           </div>
@@ -93,42 +129,47 @@
       </div>
     </section>
     <!-- ACERCA DE MI -->
-    <section class="section_aboutme" id="s2">
-      <div class="container_aboutme">
+    <section class="section_aboutme" id="aboutme">
+      <div class="container_aboutme" id="aboutmer">
         <div class="aboutme__text">
           <h4>TODO</h4>
           <h2>ACERCA DE MI</h2>
-          <p> <strong>Hola Soy Jhosep Guadalupe,</strong> Desarrollador Full Stack en Python y Javascript, actualmente
-            estoy
-            estudiando en
-            la
-            Universidad Tecnologica del Perú y en CodiGo-TECSUP.
-            <br />Me apasiona la programación Back-End, Front-End, Diseño UI y todo lo relacionado con la tecnologia ,
-            muchas
-            gracias por visitar mi pagina. </p>
+          <p>
+            <strong>Hola Soy Jhosep Guadalupe,</strong> Desarrollador Full
+            Stack en Python y Javascript, actualmente estoy estudiando en la
+            Universidad Tecnologica del Perú y en CodiGo-TECSUP. <br />Me
+            apasiona la programación Back-End, Front-End, Diseño UI y todo lo
+            relacionado con la tecnologia , muchas gracias por visitar mi
+            pagina.
+          </p>
         </div>
         <div class="container__info__personal">
           <div class="aboutme__info">
             <h3>Datos personales:</h3>
             <div class="container__icon">
               <div class="icon__aboutme">
-                <img src="./img/icons/hourglass.svg" alt="">
-              </div><span>22 años</span>
+                <img src="./img/icons/hourglass.svg" alt="" />
+              </div>
+              <span>22 años</span>
             </div>
             <div class="container__icon">
               <div class="icon__aboutme">
-                <img src="./img/icons/combined-shape.svg" alt="">
-              </div><span>993541937</span>
+                <img src="./img/icons/combined-shape.svg" alt="" />
+              </div>
+              <span>993541937</span>
             </div>
             <div class="container__icon">
               <div class="icon__aboutme">
-                <img src="./img/icons/multimedia.svg" alt="">
-              </div><span>jhosepgc14@gmail.com</span>
+                <img src="./img/icons/multimedia.svg" alt="" />
+              </div>
+              <span>jhosepgc14@gmail.com</span>
             </div>
             <div class="container__icon">
               <div class="icon__aboutme">
-                <img src="./img/icons/group-31.svg" alt="">
-              </div><span>Av. Universitaria #6599 <br /> Urb. Santa Luzmila I Etapa - Comas</span>
+                <img src="./img/icons/group-31.svg" alt="" />
+              </div>
+              <span>Av. Universitaria #6599 <br />
+                Urb. Santa Luzmila I Etapa - Comas</span>
             </div>
           </div>
           <div class="skills__interest">
@@ -140,27 +181,32 @@
               <div class="interest"><span>Peliculas</span></div>
               <div class="interest"><span>Autodidacta</span></div>
               <div class="interest"><span>Metodologías ágiles</span></div>
-              <div class="interest"><span>Crecer a nivel de conocimientos</span></div>
+              <div class="interest">
+                <span>Crecer a nivel de conocimientos</span>
+              </div>
             </div>
             <div class="container__interest2">
               <h3>Idiomas:</h3>
-              <div><span>Español:</span><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg"
-                  alt=""><img src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
-                  src="./img/icons/star.svg" alt=""></div>
-              <div><span style="padding-right: 4px;">English:</span><img src="./img/icons/star.svg" alt=""><img
-                  src="./img/icons/star.svg" alt=""><img src="./img/icons/star.svg" alt=""><img
-                  src="./img/icons/star-noactive.svg" alt=""><img src="./img/icons/star-noactive.svg" alt=""></div>
-            </div>
+              <div>
+                <span>Español:</span><img src="./img/icons/star.svg" alt="" /><img src="./img/icons/star.svg"
+                  alt="" /><img src="./img/icons/star.svg" alt="" /><img src="./img/icons/star.svg" alt="" /><img
+                  src="./img/icons/star.svg" alt="" />
+              </div>
 
+              <div>
+                <span style="padding-right: 4px;">English:</span><img src="./img/icons/star.svg" alt="" /><img
+                  src="./img/icons/star.svg" alt="" /><img src="./img/icons/star.svg" alt="" /><img
+                  src="./img/icons/star-noactive.svg" alt="" /><img src="./img/icons/star-noactive.svg" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-        <a href="./pdf/Jhosep-CV.pdf" download="Jhosep_Guadalupe_CV">DESCARGAR
-          CV</a>
+        <a href="./pdf/Jhosep-CV.pdf" download="Jhosep_Guadalupe_CV">DESCARGAR CV</a>
       </div>
     </section>
     <!-- HABILIDADES ESPECIALES -->
-    <section class="section_aboutme" id="s3">
-      <div class="container_skills">
+    <section class="section_aboutme" id="skills">
+      <div class="container_skills" id="skillsr">
         <div class="content_text">
           <h4>EXPERIENCIA EN</h4>
           <h2>HABILIDADES ESPECIALES</h2>
@@ -328,16 +374,19 @@
       </div>
     </section>
     <!-- MIS PROYECTOS -->
-    <section class="section_projects" id="s4">
+    <section class="section_projects" id="projects">
       <h4>TODOS MIS</h4>
       <h2>PROYECTOS</h2>
-      <div class="container_grid">
+      <div class="container_grid" id="projectsr">
         <div class="content_project">
-          <img src="./img/project1.jpg" alt="project1">
+          <img src="./img/project1.jpg" alt="project1" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
           <!-- MODAL -->
           <!-- The Modal -->
@@ -348,18 +397,22 @@
                 <span class="closeOff">&times;</span>
                 <div>
                   <h3>PROYECTO</h3>
-                  <h3 style="color: #ff3366;">PLATAFORMA DE CURSOS VIRTUALES</h3>
+                  <h3 style="color: #ff3366;">
+                    PLATAFORMA DE CURSOS VIRTUALES
+                  </h3>
                 </div>
               </div>
               <div class="modal-body2">
                 <div class="container_text_project">
                   <div>
-                    <p>Esas grandes ideas sucedieron sobre papel y con Humberto,
-                      pondrás en evidencia su proceso de creación. Para tu proyecto
-                      crearás y presentarás una idea desde las bases, con ella
-                      podrás obtener un certificado del curso y la experiencia inicial
-                      en creatividad publicitaria. ¡Tu idea estará lista para ser
-                      contada!</p>
+                    <p>
+                      Esas grandes ideas sucedieron sobre papel y con
+                      Humberto, pondrás en evidencia su proceso de creación.
+                      Para tu proyecto crearás y presentarás una idea desde
+                      las bases, con ella podrás obtener un certificado del
+                      curso y la experiencia inicial en creatividad
+                      publicitaria. ¡Tu idea estará lista para ser contada!
+                    </p>
                   </div>
                   <div class="tech">
                     <h5>Tecnologias:</h5>
@@ -371,54 +424,72 @@
                   </div>
                   <div class="retroespectiva">
                     <h5>Retroespectiva</h5>
-                    <p>Esas grandes ideas sucedieron sobre papel y con Humberto,
-                      pondrás en evidencia su proceso de creación. Para tu proyecto
-                      crearás y presentarás una idea desde las bases, con ella</p>
+                    <p>
+                      Esas grandes ideas sucedieron sobre papel y con
+                      Humberto, pondrás en evidencia su proceso de creación.
+                      Para tu proyecto crearás y presentarás una idea desde
+                      las bases, con ella
+                    </p>
                   </div>
                 </div>
-                <div><img src="./img/project3.jpg" alt=""></div>
+                <div><img src="./img/project3.jpg" alt="" /></div>
               </div>
             </div>
           </div>
         </div>
         <div class="content_project">
-          <img src="./img/project2.jpg" alt="project2">
+          <img src="./img/project2.jpg" alt="project2" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject2">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject2">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
         </div>
         <div class="content_project">
-          <img src="./img/project3.jpg" alt="project3">
+          <img src="./img/project3.jpg" alt="project3" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject3">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject3">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
         </div>
         <div class="content_project">
-          <img src="./img/project4.jpg" alt="project4">
+          <img src="./img/project4.jpg" alt="project4" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject4">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject4">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
         </div>
         <div class="content_project">
-          <img src="./img/project5.jpg" alt="project5">
+          <img src="./img/project5.jpg" alt="project5" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject5">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject5">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
         </div>
         <div class="content_project">
-          <img src="./img/project6.jpg" alt="project6">
+          <img src="./img/project6.jpg" alt="project6" />
           <div class="url_container">
-            <div class="direction"><img src="./img/icons/points.svg" alt="arrow"><a
-                id="btnProject6">www.jhosep.com.pe</a></div>
-            <div class="rectangule"><img src="./img/icons/arrow_top.svg" alt="points"></div>
+            <div class="direction">
+              <img src="./img/icons/points.svg" alt="arrow" /><a id="btnProject6">www.jhosep.com.pe</a>
+            </div>
+            <div class="rectangule">
+              <img src="./img/icons/arrow_top.svg" alt="points" />
+            </div>
           </div>
         </div>
       </div>
@@ -434,46 +505,52 @@
       </div>
     </section>
     <!-- MI EDUCACION -->
-    <section class="section_education" id="s5">
-      <h4>LINEA DE TIEMPO DE</h4>
-      <h2>MI EDUCACIÓN</h2>
-      <div class="container_box_education">
+    <section id="education" class="section_education">
+      <div>
+        <h4>LINEA DE TIEMPO DE</h4>
+        <h2>MI EDUCACIÓN</h2>
+      </div>
+      <div class="container_box_education" id="educationr">
         <div class="container_educaction">
-
-
-
           <div class="oval">
-            <img src="./img/img-educacion.svg" alt="">
+            <img src="./img/img-educacion.svg" alt="" />
           </div>
           <div class="text_education">
             <div class="card_education">
               <div class="circle1"></div>
               <h5>Universidad Privada del Norte</h5>
-              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-                Nulla</p>
+              <p>
+                Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque
+                ultricies velit vitae hendrerit. Cras at enim eu dui
+                commodoegestas ac ullamcorper ligula. Nulla
+              </p>
               <span>Ciclo de tiempo:</span>
               <p class="fecha">2015-2020</p>
             </div>
             <div class="card_education">
               <div class="circle2"></div>
               <h5>Universidad Privada del Norte</h5>
-              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-                Nulla</p>
+              <p>
+                Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque
+                ultricies velit vitae hendrerit. Cras at enim eu dui
+                commodoegestas ac ullamcorper ligula. Nulla
+              </p>
               <span>Ciclo de tiempo:</span>
               <p class="fecha">2015-2020</p>
             </div>
             <div class="card_education">
               <div class="circle3"></div>
               <h5>Universidad Privada del Norte</h5>
-              <p>Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque ultricies velit
-                vitae hendrerit. Cras at enim eu dui commodoegestas ac ullamcorper ligula.
-                Nulla</p>
+              <p>
+                Donec in laoreet lacus, sed gravida nunc. Vivamus pellentesque
+                ultricies velit vitae hendrerit. Cras at enim eu dui
+                commodoegestas ac ullamcorper ligula. Nulla
+              </p>
               <span>Ciclo de tiempo:</span>
               <p class="fecha">2015-2020</p>
             </div>
-            <div class="show_more"><a href="">Mostrar más</a><img src="./img/icons/shape.svg" alt="">
+            <div class="show_more">
+              <a href="">Mostrar más</a><img src="./img/icons/shape.svg" alt="" />
             </div>
           </div>
         </div>
@@ -485,23 +562,30 @@
     <div class="container_footer">
       <p>&copy; <span id="fecha"></span> Todos los derechos reservados</p>
       <div class="images_footer">
-        <div class="container_social"><img src="./img/icons/facebook.svg" alt=""></div>
-        <div class="container_social"><img src="./img/icons/linkedin.svg" alt=""></div>
-        <div class="container_social"><img src="./img/icons/twitter.svg" alt=""></div>
-        <div class="container_social"><img style="width: 100%;
-    height: 100%;" src="./img/icons/github.svg" a lt=""></div>
+        <div class="container_social">
+          <img src="./img/icons/facebook.svg" alt="" />
+        </div>
+        <div class="container_social">
+          <img src="./img/icons/linkedin.svg" alt="" />
+        </div>
+        <div class="container_social">
+          <img src="./img/icons/twitter.svg" alt="" />
+        </div>
+        <div class="container_social">
+          <img style="width: 100%; height: 100%;" src="./img/icons/github.svg" a lt="" />
+        </div>
       </div>
     </div>
   </footer>
   <!-- JAVASCRIPT -->
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/pushbar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     //SMOOTH SCROLLING
     $(document).ready(function () {
       // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
+      $("a").on("click", function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           // Prevent default anchor click behavior
@@ -512,32 +596,44 @@
 
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
         } // End if
       });
-    }); 89
+    });
   </script>
 
   <script>
-    $('.skill-per').each(function () {
+    $(".skill-per").each(function () {
       var $this = $(this);
-      var per = $this.attr('per');
-      $this.css("width", per + '%');
-      $({ animatedValue: 0 }).animate({ animatedValue: per }, {
-        duration: 1000,
-        step: function () {
-          $this.attr('per', Math.floor(this.animatedValue) + '%');
-        },
-        complete: function () {
-          $this.attr('per', Math.floor(this.animatedValue) + '%');
+      var per = $this.attr("per");
+      $this.css("width", per + "%");
+      $({ animatedValue: 0 }).animate(
+        { animatedValue: per },
+        {
+          duration: 1000,
+          step: function () {
+            $this.attr("per", Math.floor(this.animatedValue) + "%");
+          },
+          complete: function () {
+            $this.attr("per", Math.floor(this.animatedValue) + "%");
+          },
         }
-      });
+      );
+    });
+  </script>
+  <script type="text/javascript">
+    const pushbar = new Pushbar({
+      blur: true,
+      overlay: true,
     });
   </script>
 </body>

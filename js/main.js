@@ -65,7 +65,7 @@ window.onclick = function (event) {
 
 //NAV STICKY
 
-let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainNavLinks = document.querySelectorAll("header nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 let lastId;
 let cur = [];
@@ -74,6 +74,29 @@ window.addEventListener("scroll", event => {
   let fromTop = window.scrollY;
 
   mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+let mainNavLinks2 = document.querySelectorAll(".pushbar-menu nav ul li a");
+let mainSections2 = document.querySelectorAll("main section");
+let lastId2;
+let cur2 = [];
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks2.forEach(link => {
     let section = document.querySelector(link.hash);
 
     if (

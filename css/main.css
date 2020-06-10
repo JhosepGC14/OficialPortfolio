@@ -21,19 +21,19 @@ header {
   width: 100%;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1);
   background: white;
-  padding: 0px 150px;
   position: fixed;
   z-index: 1;
   height: 70px;
 }
 
 .container__nav {
-  width: 100%;
+  width: 80%;
   height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .container__logo {
@@ -78,7 +78,7 @@ nav ul li a.current {
 }
 
 .container__diurno {
-  width: 13%;
+  width: 150px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1294,12 +1294,13 @@ footer {
   color: #555555;
 }
 
+.btn-menu {
+  display: none;
+}
+
 /* RESPONSIVE WEB DESIGN */
 
 @media screen and (max-width: 1200px) {
-  header {
-    padding: 0px 120px;
-  }
   .container__logo ul li {
     margin: 0px 40px 0px 0px;
   }
@@ -1310,7 +1311,7 @@ footer {
     display: inline;
   }
   .dark_version {
-    width: 75px;
+    width: 62px;
   }
   .aboutme__info {
     width: 49%;
@@ -1342,14 +1343,17 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .container__diurno {
-    width: 16%;
+    width: 150px;
+  }
+  .container__diurno span {
+    font-size: 1em;
   }
   .container__logo .logo_img {
     display: block;
-    margin: 0px 35px 0px 0px;
+    margin: 0px 20px 0px 0px;
   }
   .container__logo ul li {
-    margin: 0px 26px 0px 0px;
+    margin: 0px 12px 0px 0px;
   }
   .button__skills {
     display: block;
@@ -1382,12 +1386,12 @@ footer {
     width: 45%;
     margin-left: 30px;
   }
+  .dark_version {
+    width: 62px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    padding: 0px 120px 0px 74px;
-  }
   header ul {
     display: none;
   }
@@ -1395,7 +1399,70 @@ footer {
     display: none;
   }
   .container__diurno {
-    width: 10%;
+    width: 62px;
+  }
+  .dark_version {
+    width: 62px;
+  }
+
+  .btn-menu {
+    display: block;
+    background: none;
+    border: none;
+    margin-left: 30px;
+  }
+
+  .btn-menu img {
+    display: block;
+  }
+
+  .pushbar-menu {
+    padding: 15px 30px 30px 30px;
+  }
+
+  .btn_close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .btn_close span {
+    color: #ff3366;
+    float: right;
+    font-size: 3.3em;
+  }
+
+  .btn_close span:hover,
+  .btn_close span:focus {
+    color: #ff3366;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .pushbar-menu nav ul li {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  .pushbar-menu nav ul li a {
+    text-decoration: none;
+    font-family: "Barlow";
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    padding-bottom: 5px;
+  }
+  .pushbar-menu nav ul li a:hover {
+    border-bottom: 2px solid #ff3366;
+  }
+
+  .pushbar-menu nav ul li a.current {
+    border-bottom: 2px solid #ff3366;
   }
 
   .container__info__personal {
@@ -1442,12 +1509,12 @@ footer {
   .circle3 {
     display: none;
   }
+  .modal-content2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    padding: 0px 120px 0px 45px;
-  }
   .container__diurno {
     width: 60px;
   }
@@ -1458,6 +1525,9 @@ footer {
     height: 100%;
     padding-top: 90px;
     width: 95%;
+  }
+  .dark_version {
+    width: 62px;
   }
   .container__info {
     width: 100%;
@@ -1604,8 +1674,11 @@ footer {
     width: 90%;
     padding-top: 115px;
   }
+  .dark_version {
+    width: 62px;
+  }
   .container__diurno {
-    width: 30%;
+    width: 62px;
   }
   .container__info h3 {
     font-size: 2.1em;
@@ -1716,7 +1789,7 @@ footer {
     margin-bottom: 8px;
   }
   .container__diurno {
-    width: 40%;
+    width: 62px;
   }
   .section_start {
     width: 95%;
@@ -1744,5 +1817,8 @@ footer {
   }
   .content_modal_icons {
     width: 100%;
+  }
+  .dark_version {
+    width: 62px;
   }
 }
