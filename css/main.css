@@ -2,11 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root {
+  --red: #ff3366;
+  --black: #1a2e35;
+  --black_span: #444444;
+  --black_text: #555555;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -55,13 +63,13 @@ header {
 }
 
 .container__logo ul li a:hover {
-  border-bottom: 2px solid #ff3366;
+  border-bottom: 2px solid var(--red);
   border-bottom-left-radius: 1px 1px;
   border-bottom-right-radius: 1px 1px;
 }
 
 nav ul li a.current {
-  border-bottom: 2px solid #ff3366;
+  border-bottom: 2px solid var(--red);
   border-bottom-left-radius: 1px 1px;
   border-bottom-right-radius: 1px 1px;
 }
@@ -112,7 +120,7 @@ nav ul li a.current {
 .light_version {
   width: 28px;
   height: 28px;
-  background-color: #ff3366;
+  background-color: var(--red);
   position: absolute;
   bottom: 2px;
   border-radius: 50%;
@@ -146,19 +154,25 @@ nav ul li a.current {
 
 .container__info {
   width: 50%;
+  color: var(--black);
+}
+
+.text_red {
+  color: var(--red);
 }
 
 .container__info h3 {
   font-size: 2.4em;
   display: inline-block;
   letter-spacing: 0.5px;
-  color: #1a2e35;
+  margin-bottom: 8px;
 }
 
 .container__info h1 {
   font-size: 4.1em;
   letter-spacing: 0.5px;
-  color: #1a2e35;
+  color: var(--black);
+  margin-bottom: 7px;
 }
 
 .container__info p {
@@ -190,7 +204,7 @@ nav ul li a.current {
   border: none;
   border-radius: 27.5px;
   box-shadow: 0 7px 13px 0 rgba(255, 51, 102, 0.26);
-  background-color: #ff3366;
+  background-color: var(--red);
   color: white;
   font-size: 1.3em;
   font-weight: bold;
@@ -210,8 +224,8 @@ nav ul li a.current {
 
 .button__skills:focus {
   background-color: white;
-  border: solid 1px #ff3366;
-  color: #ff3366;
+  border: solid 1px var(--red);
+  color: var(--red);
   transition: all 1s;
   outline: none;
 }
@@ -219,11 +233,11 @@ nav ul li a.current {
 .button__social {
   width: 170px;
   height: 56px;
-  border: solid 1px #ff3366;
+  border: solid 1px var(--red);
   border-radius: 27.5px;
   box-shadow: 0 7px 13px 0 rgba(255, 51, 102, 0.05);
   background-color: white;
-  color: #ff3366;
+  color: var(--red);
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.28px;
@@ -233,7 +247,7 @@ nav ul li a.current {
 }
 
 .button__social:focus {
-  background-color: #ff3366;
+  background-color: var(--red);
   color: white;
   transition: all 1s;
   outline: none;
@@ -313,7 +327,7 @@ header {
 
 .aboutme__text h4 {
   text-align: center;
-  color: #ff3366 !important;
+  color: var(--red) !important;
   font-weight: normal;
   font-size: 2.3em;
   letter-spacing: 0.5px;
@@ -324,7 +338,7 @@ header {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #1a2e35 !important;
+  color: var(--black) !important;
 }
 
 .aboutme__text p {
@@ -350,7 +364,7 @@ header {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.46px;
-  color: #1a2e35;
+  color: var(--black);
   padding-bottom: 24px;
 }
 
@@ -399,7 +413,7 @@ span {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.46px;
-  color: #1a2e35;
+  color: var(--black);
   padding-bottom: 11px;
 }
 
@@ -433,8 +447,7 @@ span {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.46px;
-  color: #1a2e35;
-  padding-bottom: 24px;
+  color: var(--black);
 }
 
 .container__interest2 span {
@@ -451,7 +464,7 @@ span {
 .container_aboutme a {
   width: 170px;
   box-shadow: 0 7px 13px 0 rgba(255, 51, 102, 0.26);
-  background-color: #ff3366;
+  background-color: var(--red);
   margin: 36px auto 0px auto;
   color: white;
   font-size: 1.5em;
@@ -470,8 +483,8 @@ span {
 
 .container_aboutme a:focus {
   background-color: white;
-  border: solid 1px #ff3366;
-  color: #ff3366 !important;
+  border: solid 1px var(--red);
+  color: var(--red) !important;
   transition: all 1s;
   outline: none;
 }
@@ -484,7 +497,7 @@ span {
 
 .content_text h4 {
   text-align: center;
-  color: #ff3366 !important;
+  color: var(--red) !important;
   font-weight: normal;
   font-size: 2.3em;
   letter-spacing: 0.5px;
@@ -495,7 +508,7 @@ span {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #1a2e35 !important;
+  color: var(--black) !important;
   margin-bottom: 65px;
 }
 
@@ -522,7 +535,7 @@ span {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.46px;
-  color: #1a2e35;
+  color: var(--black);
   margin-bottom: 31px;
 }
 
@@ -546,7 +559,7 @@ span {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #444444;
+  color: var(--black_span);
 }
 
 .skill-bar {
@@ -557,11 +570,11 @@ span {
 
 .skill-per {
   height: 5px;
-  background: #ff3366;
+  background: var(--red);
   border-radius: 2.5px;
   width: 0;
   position: relative;
-  transition: 1s linear;
+  transition: 2s linear;
 }
 
 .skill-per::before {
@@ -569,7 +582,7 @@ span {
   position: absolute;
   padding: 4px 6px;
   font-family: "Source Sans Pro";
-  color: #444444;
+  color: var(--black_span);
   background-color: #ffffff;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
   font-size: 1.1em;
@@ -640,7 +653,7 @@ span {
 
 .container_projects h4 {
   text-align: center;
-  color: #ff3366 !important;
+  color: var(--red) !important;
   font-weight: normal;
   font-size: 2.3em;
   letter-spacing: 0.5px;
@@ -651,7 +664,7 @@ span {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #1a2e35 !important;
+  color: var(--black) !important;
 }
 
 .container_grid {
@@ -750,7 +763,7 @@ span {
 .pagination a {
   font-family: "Roboto";
   font-weight: 500;
-  color: #444444;
+  color: var(--black_span);
   font-size: 1.3em;
   float: left;
   padding: 8px 12px;
@@ -761,7 +774,7 @@ span {
 }
 
 .pagination a.active {
-  background-color: #ff3366;
+  background-color: var(--red);
   color: white;
   border-radius: 16.5px;
 }
@@ -793,7 +806,7 @@ span {
 
 .section_education h4 {
   text-align: center;
-  color: #ff3366 !important;
+  color: var(--red) !important;
   font-weight: normal;
   font-size: 2.3em;
   letter-spacing: 0.5px;
@@ -804,7 +817,7 @@ span {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #1a2e35 !important;
+  color: var(--black) !important;
   margin-bottom: 54px;
 }
 
@@ -899,7 +912,7 @@ span {
   font-size: 2em;
   font-weight: normal;
   letter-spacing: 0.42px;
-  color: #ff3366;
+  color: var(--red);
   margin-bottom: 9px;
 }
 
@@ -914,7 +927,7 @@ span {
   font-family: "Source Sans Pro";
   font-size: 1.5em;
   font-weight: 600;
-  color: #444444;
+  color: var(--black_span);
   margin: 0px 16px 29px 0px;
 }
 
@@ -922,7 +935,7 @@ span {
   display: inline-block;
   font-family: "Source Sans Pro";
   font-size: 1.5em;
-  color: #444444;
+  color: var(--black_span);
 }
 
 .show_more {
@@ -934,7 +947,7 @@ span {
   font-size: 1.4em;
   font-weight: bold;
   letter-spacing: 0.29px;
-  color: #ff3366;
+  color: var(--red);
   text-decoration: none;
   margin-right: 8px;
 }
@@ -1034,14 +1047,18 @@ footer {
 
 /* The Close Button */
 .closeModal {
-  color: #ff3366;
+  color: var(--red);
   float: right;
   font-size: 3.3em;
 }
 
+.closeModal img {
+  display: block;
+}
+
 .closeModal:hover,
 .closeModal:focus {
-  color: #ff3366;
+  color: var(--red);
   text-decoration: none;
   cursor: pointer;
 }
@@ -1187,26 +1204,30 @@ footer {
 
 /* The Close Button */
 .closeOff {
-  color: #ff3366;
+  color: var(--red);
   float: right;
   font-size: 3.3em;
 }
 
 .closeOff:hover,
 .closeOff:focus {
-  color: #ff3366;
+  color: var(--red);
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header2 {
-  color: black;
+  color: var(--black);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: start;
   line-height: 23px;
   margin-bottom: 28px;
+}
+
+.modal-header2 img {
+  display: block;
 }
 
 .modal-header2 h3 {
@@ -1217,7 +1238,6 @@ footer {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.29px;
-  color: #1a2e35;
 }
 
 .modal-body2 {
@@ -1259,7 +1279,7 @@ footer {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.35px;
-  color: #1a2e35;
+  color: var(--black);
   width: 100%;
 }
 
@@ -1271,7 +1291,7 @@ footer {
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.35px;
-  color: #1a2e35;
+  color: var(--black);
   margin-bottom: 13px;
 }
 
@@ -1438,14 +1458,14 @@ footer {
   }
 
   .btn_close span {
-    color: #ff3366;
+    color: var(--red);
     float: right;
     font-size: 3.3em;
   }
 
   .btn_close span:hover,
   .btn_close span:focus {
-    color: #ff3366;
+    color: var(--red);
     text-decoration: none;
     cursor: pointer;
   }
@@ -1468,11 +1488,11 @@ footer {
     padding-bottom: 5px;
   }
   .pushbar-menu nav ul li a:hover {
-    border-bottom: 2px solid #ff3366;
+    border-bottom: 2px solid var(--red);
   }
 
   .pushbar-menu nav ul li a.current {
-    border-bottom: 2px solid #ff3366;
+    border-bottom: 2px solid var(--red);
   }
 
   .container__info__personal {
@@ -1536,7 +1556,7 @@ footer {
   }
   .section_start {
     height: 100%;
-    padding-top: 90px;
+    padding-top: 107px;
     width: 95%;
   }
   .dark_version {
@@ -1548,6 +1568,7 @@ footer {
   }
   .container__info h3 {
     font-size: 2.1em;
+    margin-bottom: 7px;
   }
   .container__info h1 {
     font-size: 2.7em;
@@ -1564,7 +1585,7 @@ footer {
     width: 100%;
   }
   .container_img_rwd img {
-    width: 100%;
+    width: 85%;
   }
   .button__skills {
     margin: 30px auto auto auto;
@@ -1695,6 +1716,7 @@ footer {
   }
   .container__info h3 {
     font-size: 2.1em;
+    margin-bottom: 7px;
   }
   .container__info h1 {
     font-size: 2.7em;
@@ -1812,6 +1834,7 @@ footer {
 @media only screen and (max-width: 320px) {
   .container__info h3 {
     font-size: 1.9em;
+    margin-bottom: 7px;
   }
   .container__info h1 {
     font-size: 2.5em;
