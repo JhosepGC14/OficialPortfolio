@@ -184,7 +184,7 @@
   }
   .container_grid {
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(5, 300px);
   }
   .container_educaction .oval {
     display: none;

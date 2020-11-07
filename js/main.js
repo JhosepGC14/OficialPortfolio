@@ -32,8 +32,11 @@ var btn3 = document.getElementById("btnProject2");
 var btn4 = document.getElementById("btnProject3");
 var btn5 = document.getElementById("btnProject4");
 var btn6 = document.getElementById("btnProject5");
-var btn7 = document.getElementById("btnProject6");
-var span2 = document.getElementsByClassName("closeOff")[0];
+// var btn7 = document.getElementById("btnProject6");
+var span2 = document.getElementById("closeModalProject");
+
+console.log("variable de cierre: ", span2)
+
 btn2.onclick = function () {
   modal2.style.display = "block";
 }
@@ -49,11 +52,12 @@ btn5.onclick = function () {
 btn6.onclick = function () {
   modal2.style.display = "block";
 }
-btn7.onclick = function () {
-  modal2.style.display = "block";
-}
+// btn7.onclick = function () {
+//   modal2.style.display = "block";
+// }
 
 span2.onclick = function () {
+  console.log("llego a la funcion")
   modal2.style.display = "none";
 }
 
