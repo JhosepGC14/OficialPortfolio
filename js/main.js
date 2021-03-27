@@ -6,6 +6,8 @@ document.getElementById('fecha').innerHTML = fecha;
 
 // Get the modal
 var modal = document.getElementById("modalSocial");
+
+
 // Get the button that opens the modal
 var btn = document.getElementById("btnSocial");
 // Get the <span> element that closes the modal
@@ -25,47 +27,28 @@ window.onclick = function (event) {
   }
 };
 
-// Get the modal projetc
-var modal2 = document.getElementById("modalProject");
-var btn2 = document.getElementById("btnProject");
-var btn3 = document.getElementById("btnProject2");
-var btn4 = document.getElementById("btnProject3");
-var btn5 = document.getElementById("btnProject4");
-var btn6 = document.getElementById("btnProject5");
-// var btn7 = document.getElementById("btnProject6");
-var span2 = document.getElementById("closeModalProject");
+// Get the modal project
 
-console.log("variable de cierre: ", span2)
+const openModalProject = (modalToShow, idCloseModal) => {
 
-btn2.onclick = function () {
-  modal2.style.display = "block";
-}
-btn3.onclick = function () {
-  modal2.style.display = "block";
-}
-btn4.onclick = function () {
-  modal2.style.display = "block";
-}
-btn5.onclick = function () {
-  modal2.style.display = "block";
-}
-btn6.onclick = function () {
-  modal2.style.display = "block";
-}
-// btn7.onclick = function () {
-//   modal2.style.display = "block";
-// }
 
-span2.onclick = function () {
-  console.log("llego a la funcion")
-  modal2.style.display = "none";
-}
+  let modalProject = document.getElementById(modalToShow);
+  let iconCloseModal = document.getElementById(idCloseModal);
 
-window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
+  modalProject.style.display = "block";
+
+  iconCloseModal.onclick = function () {
+    modalProject.style.display = "none";
   }
-};
+
+  window.onclick = function (event) {
+    if (event.target == modalProject) {
+      modalProject.style.display = "none";
+    }
+  };
+
+}
+
 
 //NAV STICKY
 

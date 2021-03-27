@@ -31,7 +31,7 @@ html.pushbar_locked .pushbar_overlay {
   position: fixed;
   overflow-y: auto;
   will-change: transform;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
   background: #fff;
 }
 
