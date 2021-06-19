@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="icon" href="./img/icon_title.svg" />
   <title>.::JAG-Jhosep Guadalupe::.</title>
 </head>
@@ -33,12 +35,16 @@
       </div>
       <div class="container__diurno">
         <span>Modo diurno</span>
-        <div class="dark_version">
+        <!-- <div class="dark_version" id="switch">
           <div class="light_version">
             <img src="./img/icons/illumination.svg" alt="light" />
           </div>
           <img src="./img/icons/phases.svg" alt="dark" />
-        </div>
+        </div> -->
+        <button class="dark_version" id="switch">
+          <span class="item_light"><i class="far fa-sun"></i></span>
+          <span class="item_dark"><i class="far fa-moon"></i></span>
+        </button>
       </div>
       <button class="btn-menu" data-pushbar-target="pushbar-menu">
         <img src="./img/icons/bars.svg" alt="">
