@@ -127,14 +127,14 @@ nav ul li a.current {
   z-index: 10000;
   color: white;
   position: absolute;
-  transform: translate(-6px, 9px);
+  transform: translate(-8px, 6px);
 }
 
 .dark_version.btn_active .item_dark i {
   z-index: 10000;
   color: white;
   position: absolute;
-  transform: translate(-6px, 9px);
+  transform: translate(-8px, 6px);
 }
 
 .dark_version.btn_active .item_light {
@@ -173,7 +173,7 @@ nav ul li a.current {
   z-index: 10000;
   color: white;
   position: absolute;
-  transform: translate(-6px, 9px);
+  transform: translate(-8px, 6px);
 }
 
 .dark_version .item_dark {
